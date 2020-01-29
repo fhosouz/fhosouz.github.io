@@ -1,16 +1,31 @@
+
+/* ###################### CSS Colors ############################ 
+
+- Hexadecimal: FF00FF - six caracters 0 to 9 numbers and A to F words. 
+        First and Second caracters represents the red color level
+        Third and Fourth caracters represents the green color level
+        Fifth and Sixth caracters represents the blue color level
+
+- RDB: (0,99,255) - tree caracters 0 to 255 to represents the colors red, green and blue respectively
+
+- RDBa: (0,255,200,0.8) - four caractes 0 to 255 to represents the colors red, green and blue and the last caracters represent the transparency level
+*/
+
 html { 
   font-size: 12px; /* px significa "pixels": o tamanho da fonte base agora é de 10 pixels */ 
   font-family: "Open Sans", sans-serif; /* este deve ser o nome da fonte que você obteve no Google Fonts */ 
-  background-color: rgb(0, 127, 159);
+  background-color: black
 }
 
 body {
   width: 800px;
-  margin: 0 auto;
-  background-color: #FF9500;
+  margin: auto auto;
+  background-color: rgb(0, 127, 159);;
   padding: 20px 20px 20px 20px;
   border: 4px solid white;
-}
+  font-size: 20px;
+  color: white;
+ }
 
 h1 {
   margin: 0;
@@ -18,13 +33,31 @@ h1 {
   color: white;
   text-shadow: 4px 4px 2px black;
   text-align: center;
-  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.0em;
 }
 
-p, li {
+h2{
+  font-family: 'Lobster', cursive;
+
+}
+
+
+h4{
+  color: white;
+}
+
+ li {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
+}
+
+p{
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+
 }
 
 img {
@@ -32,3 +65,78 @@ img {
   margin: 0 auto;
 }
 
+form{
+ text-align: center;
+ align-self: center;
+}
+
+/*Use selectors by "ID"
+Use "#ID_name" to apply css in a single element
+Use ".Class_name" to apply css in a group of elements with the class name
+Use "li a" for exemple to apply css in a descendant element in a level more specific" 
+Use "ul + p" for exemple to apply css in a first paragraph after ul element
+Use "ul ~ p" for exemple to apply css in all <p> elements follow a ul element 
+*/ 
+.rodape
+{
+background-color: black;
+height: 50px;
+border: white solid;
+}
+
+li:nth-of-type(even) {
+  background: beige;
+}
+li:hover{
+  background-color: gray;
+} 
+
+label{
+  text-transform: uppercase ;
+}
+
+.mouseIntercalado{
+  color: black;
+}
+
+div{
+  width: 30%;
+  float: left;
+  margin: 1.66%;
+ }
+
+.border{
+  border: 2px solid white;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.verticalborder{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+   }
+   
+  .horizontalborder{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  table:nth-of-type(2) td{
+    width:100px;
+    height: 100px;
+  }
+  .title{
+    text-align: center;
+ padding: 20px;
+ margin: 10px 5px 5px 10px;
+
+  }
+
+  img{
+    width:30%;
+    float: left;
+    margin: 1.66%;
+
+  }
